@@ -4,7 +4,7 @@ function greeting() {
 }
 
 /* Function expression */
-const getUser = function () {
+export const getUser = function () {
   return {
     id: 'ABC123',
     username: "CromanDev",
@@ -18,12 +18,12 @@ const greet = greeting();
 const user = getUser();
 const iAm = whoAmI("Carlos");
 
-console.log(greet);
-console.log(user);
-console.log(iAm);
+// console.log(greet);
+// console.log(user);
+// console.log(iAm);
 
 /* TODO: transform the following function declaration to arrow function expression */
-function getActiveUser(id) {
+export function getActiveUser(id) {
   return {
     id,
     username: "UserABC123",
@@ -35,5 +35,5 @@ const getActiveUser2 = (id) => ({ id, username: "UserABC123", });
 const userActive = getActiveUser(1);
 const userActive2 = getActiveUser2(2);
 
-console.log(userActive);
-console.log(userActive2);
+// console.log(userActive);
+// console.log(userActive2);

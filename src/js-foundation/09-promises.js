@@ -13,11 +13,11 @@ const promise = new Promise((resolve, reject) => {
   }, 2000);
 });
 
-promise
+/* promise
   .then((hero) => console.log({ hero }))
-  .catch((error) => console.error({ error }));
+  .catch((error) => console.error({ error })); */
 
-const getHeroByIDAsync = (id) => {
+export const getHeroByIDAsync = (id) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const hero = getHeroByID(id);
@@ -31,6 +31,6 @@ const getHeroByIDAsync = (id) => {
   })
 }
 
-getHeroByIDAsync(2)
+/* getHeroByIDAsync(2)
   .then((hero) => console.log({ hero }))
-  .catch((error) => console.error({ error }));
+  .catch((error) => console.error({ error })); */

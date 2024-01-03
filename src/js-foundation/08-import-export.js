@@ -12,7 +12,7 @@ const hero = getHeroByID(2) ?? 'Hero not found';
 
 // console.log(hero);
 
-function getHeroesByOwner(owner) {
+export function getHeroesByOwner(owner) {
   return heroes.filter((hero) => hero.owner === owner);
 }
 
